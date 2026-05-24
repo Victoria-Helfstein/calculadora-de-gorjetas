@@ -125,7 +125,7 @@ main{
     padding: 1.5rem;
 }
 
-.resultados div{
+.resultados div div{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -190,17 +190,29 @@ main{
         border-radius: 1.5625rem;
         max-width: 57.5rem;
         margin-inline: auto;
+    
     }
 
     main section{
         width: 100%;
     }
 
-    .conta input::-webkit-inner-spin-button{
+    .conta input::-webkit-inner-spin-button,
+    .pessoas input::-webkit-inner-spin-button{
         display: none;
     }
     .gorjeta div{
         grid-template-columns: 1fr 1fr 1fr;
     }
-
+ 
+    .resultados{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2.5rem;
+    }
+        .resultados div > strong {
+            font-size: 3rem;
+        }
+    
 }
