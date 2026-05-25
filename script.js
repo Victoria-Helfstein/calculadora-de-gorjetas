@@ -34,7 +34,18 @@ botao.addEventListener("click", receberPorcentagem)
 
 })
 
-function receberPorcentagem(evento){
- 
+function receberPorcentagemBotao(evento){
+
+    botoesGorjetas.forEach(botao => {
+
+        botao.classList.remove("botao-ativo")
+
+
+    if(botao.value === evento.target.value){
+        botao.classList.add("botao-ativo")
+    }
+
+})
+ porcentagem = parseFloat(evento.target.evento) /100
 
 }
