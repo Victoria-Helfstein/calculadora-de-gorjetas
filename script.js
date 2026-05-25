@@ -66,10 +66,10 @@ function calcular() {
 
     if(conta !== 0 && porcentagem !== 0 && pessoas !== 0){
 const  strongGorjetaTotal = document.querySelector(".gorjeta-total > strong")
-strongGorjetaTotal.innerHTML = `$ $((conta * porcentagem / pessoas).toFixed(2))`
+strongGorjetaTotal.innerHTML = `${(conta * porcentagem / pessoas).toFixed(2)}`
 
 const strongTotal = document.querySelector(".total > strong")
-strongTotal.innerHTML = `$ $((conta + (conta * porcentagem) / pessoas)toFixed(2))`
+strongTotal.innerHTML = `${(conta + (conta * porcentagem) / pessoas)toFixed(2)}`
     }
 }
 
