@@ -34,7 +34,7 @@ botao.addEventListener("click", receberPorcentagem)
 
 })
 
-function receberPorcentagemBotao(evento){
+function receberPorcentagem(evento){
 
     botoesGorjetas.forEach(botao => {
 
@@ -46,6 +46,15 @@ function receberPorcentagemBotao(evento){
     }
 
 })
- porcentagem = parseFloat(evento.target.evento) /100
+
+if(evento.target.value === ""){
+porcentagem = parseFloat(evento.target.evento) /100
+} else{
+    porcentagem = 0
+}
+ 
 
 }
+
+const gorjetaImput = document.querySelector("#outra")
+gorjetaImput.addEventListener("input",receberPorcentagemBotao)
